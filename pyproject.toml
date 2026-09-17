@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "password-generator"
+version = "0.0.1"
+description = "Password generator"
+requires-python = ">=3.14"
+dependencies = ["click"]
+
+[project.scripts]
+password-generator = "password_generator.cli:main"
